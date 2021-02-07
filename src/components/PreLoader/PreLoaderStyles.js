@@ -1,5 +1,16 @@
 import styled, { keyframes } from 'styled-components';
 
+const Loader = styled.div`
+  width: 250px;
+  height: 40px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+`;
+
 const cssloadMotion = keyframes`
 	0% {
 		transform: translateX(0) scale(1);
@@ -18,7 +29,7 @@ const cssloadMotion = keyframes`
 	}
 `;
 
-const Loader = styled.div`
+const One = styled.div`
   position: absolute;
   width: 30px;
   height: 30px;
@@ -33,4 +44,4 @@ const Loader = styled.div`
   -moz-animation: ${cssloadMotion} 1s cubic-bezier(0.77, 0, 0.175, 1) infinite;
 `;
 
-export { Loader };
+export { Loader, One };

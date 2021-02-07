@@ -1,40 +1,32 @@
 :root {
-  --bgColorContainer: #dfdfc9d8;
+  --bgColorContainer: #80e0fd;
   --primaryTextColor: #3f3f3f;
   --titleColor: #080808;
+  --secondColor: #fa8072;
+  /* --loginColor: #000000; */
 }
 
 body {
   margin: 0;
   line-height: 1.5;
   color: var(--primaryTextColor);
+  /* background-color: var(--primaryTextColor); */
 }
 
-img {
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-}
-
-ul,
-ol {
+ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
-a {
-  text-decoration: none;
+.navLink {
+  font-size: 26px;
+  color: var(--titleColor);
+  margin-right: 16px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label {
-  margin-top: 0px;
-  margin-bottom: 0px;
+.navLink:not(:last-child) {
+  margin-right: 16px;
+}
+
+.navLink--active {
+  color: var(--secondColor);
 }

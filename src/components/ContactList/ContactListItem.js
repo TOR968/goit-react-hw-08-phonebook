@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import ClearIcon from '@material-ui/icons/Clear';
 import { ListItem, Text, Button } from './ContactListItemStyles';
 
 const ContactListItem = ({ name, number, deleteContact }) => {
@@ -8,7 +9,7 @@ const ContactListItem = ({ name, number, deleteContact }) => {
         {name}: {number}
       </Text>
       <Button type="button" onClick={deleteContact}>
-        Delete
+        <ClearIcon />
       </Button>
     </ListItem>
   );

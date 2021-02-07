@@ -1,7 +1,11 @@
-import { Loader } from './PreLoaderStyles';
+import { Loader, One } from './PreLoaderStyles';
 
 const PreLoader = () => {
-  return <Loader />;
+  return (
+    <Loader>
+      <One />
+    </Loader>
+  );
 };
 
 export default PreLoader;

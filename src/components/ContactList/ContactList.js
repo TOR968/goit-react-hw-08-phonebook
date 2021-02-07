@@ -23,11 +23,11 @@ const ContactList = () => {
 
   useEffect(() => {
     dispatch(fetchUserContact());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
-      {loadingContacts && <PreLoader />}
+      {loadingContacts && <PreLoader sizePreloader="100px" />}
       {errorFetch && (
         <Error>Something wrong... {errorFetch}! Try again later!</Error>
       )}

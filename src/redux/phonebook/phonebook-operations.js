@@ -11,13 +11,13 @@ import {
   removeContactError,
 } from './phonebook-action';
 
-axios.defaults.baseURL = 'http://localhost:4001/';
+axios.defaults.baseURL = 'https://goit-phonebook-api.herokuapp.com/';
 
 const fetchUserContact = () => dispatch => {
   dispatch(fetchContactRequest());
 
   axios
-    .get('contacts')
+    .get('/contacts')
     .then(({ data }) => dispatch(fetchContactSuccess(data)))
     .catch(error => dispatch(fetchContactError(error.message)));
 };
@@ -26,7 +26,7 @@ const addUserContact = ({ name, number }) => dispatch => {
   dispatch(addContactRequest());
 
   axios
-    .post('contacts', { name, number })
+    .post('/contacts', { name, number })
     .then(({ data }) => dispatch(addContactSuccess(data)))
     .catch(error => dispatch(addContactError(error.message)));
 };

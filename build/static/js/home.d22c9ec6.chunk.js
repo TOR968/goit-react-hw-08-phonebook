@@ -1,0 +1,2 @@
+(this["webpackJsonpmy-app"]=this["webpackJsonpmy-app"]||[]).push([[3],{131:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return a}));var o=e(4),r=e(17);function c(){var n=Object(r.a)(["\n  font-size: 36px;\n  color: var(--secondColor);\n  text-align: center;\n  margin-top: 20px;\n"]);return c=function(){return n},n}var p=e(18).a.div(c()),a=function(){return Object(o.jsx)(p,{children:"Welcome to PhoneBook App!"})}}}]);
+//# sourceMappingURL=home.d22c9ec6.chunk.js.map

@@ -1,0 +1,2 @@
+:root{--bgColorContainer:#80e0fd;--primaryTextColor:#3f3f3f;--titleColor:#080808;--secondColor:salmon}body{margin:0;line-height:1.5;color:#3f3f3f;color:var(--primaryTextColor)}ul{list-style:none}.navLink{font-size:26px;color:#080808;color:var(--titleColor)}.navLink,.navLink:not(:last-child){margin-right:16px}.navLink--active{color:salmon;color:var(--secondColor)}
+/*# sourceMappingURL=main.d55b32a1.chunk.css.map */

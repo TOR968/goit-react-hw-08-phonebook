@@ -1,0 +1,7 @@
+[build]
+  publish ="build"
+
+[[redirects]]
+  fron = "/*"
+  to = "/index.html"
+  status = 200
